@@ -1,0 +1,116 @@
+.menu {
+  width: 300px;
+  background-color: $color-menu;
+  .part2 {
+    border-bottom: 1px solid $color-menu-hover;
+    div {
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      h4 {
+        cursor: pointer;
+        color: rgb(128, 124, 124);
+      }
+    }
+  }
+  .part1 {
+    border-bottom: 1px solid $color-menu-hover;
+    h3 {
+      color: rgb(128, 124, 124);
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+    div {
+      padding: 20px 0px 20px 20px;
+      &:hover {
+        background-color: $color-menu-hover !important;
+        button {
+          background-color: $color-menu-hover;
+        }
+      }
+      button {
+        display: flex;
+        align-items: center;
+        img {
+          border-radius: 50%;
+        }
+
+        background-color: $color-menu;
+        font-size: 25px;
+        border: none;
+
+        i {
+          color: white;
+        }
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 20px;
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+}
+.general {
+  background-color: #181818;
+  width: 100%;
+  .general_header {
+    .general_header_box {
+      background-color: #202020;
+      border-top: 1px solid $color-menu-hover;
+      border-bottom: 1px solid $color-menu-hover;
+      div {
+        &:first-child {
+          margin-left: 20px;
+        }
+        margin: 10px;
+
+        button {
+          border: none;
+          padding: 10px 20px 10px 20px;
+          border-radius: 20px;
+          font-size: 20px;
+          background-color: #373737;
+          color: white;
+          &:hover {
+            background-color: #4d4d4d;
+          }
+        }
+      }
+    }
+  }
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    margin: 20px;
+    .post {
+      .post_description {
+        margin-top: 5px;
+        div {
+          img {
+            border-radius: 50%;
+          }
+          a {
+            margin-left: 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+          }
+        }
+      }
+      .post_uploader {
+        div {
+          a {
+            margin-left: 55px;
+            color: $color-menu-hover;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
