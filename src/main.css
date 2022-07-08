@@ -100,6 +100,58 @@ header {
   color: white;
 }
 
+@media screen and (max-width: 1400px) {
+  header {
+    border-top: 2px solid #DDDDDD;
+  }
+
+  .home_page a {
+    background-color: green;
+    display: none;
+    margin: -10px;
+  }
+
+  .part2 {
+    display: none;
+  }
+
+  .part1 div {
+    padding: 20px !important;
+  }
+  .part1 h3 {
+    display: none;
+  }
+
+  .menu {
+    width: 100px;
+  }
+}
+input {
+  display: none;
+}
+
+@media screen and (max-width: 631px) {
+  .menu {
+    display: none;
+  }
+
+  .posts {
+    display: flex;
+    justify-content: center;
+  }
+
+  .youtube-icon button {
+    display: flex;
+  }
+
+  .navbar_center div button {
+    margin-right: 10px;
+  }
+
+  form button {
+    background-color: red;
+  }
+}
 .menu {
   width: 300px;
   background-color: #212121;
